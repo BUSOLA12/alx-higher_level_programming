@@ -6,9 +6,9 @@ if __name__ == "__main__":
     argv_len = len(sys.argv)
 
     if argv_len == 0:
-        print("{} arguments.".format(argv_len))
+        print("0 arguments.")
     elif argv_len == 1:
-        print("{} argument:".format(argv_len))
+        print("1 argument:")
     else:
         print("{} arguments:".format(argv_len))
 
