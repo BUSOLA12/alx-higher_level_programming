@@ -6,13 +6,13 @@ if __name__ == "__main__":
     import sys
 
     count = len(sys.argv)
-    if count - 1 < 3 or count - 1 > 3:
+    if count - 1 != 3::
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     ops{"+": add, "-": sub, "*": mul, "/": div}
     if sys.argv[2] not in list(ops.keys()):
         print("Uknown operator. Available operators: +, -, * and /")
         sys.exit(1)
-    a = sys.argv[1]
-    b = sys.argv[3]
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
     print("{} {} {} = {}".format(int(sys.argv[1]), sys.argv[2], int(sys.argv[3]), ops[sys.argv[2](a, b)))
